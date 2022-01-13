@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">DeliverySystem</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="strSpinnerType">
+        <item> Thực phẩm </item>
+        <item> Đồ tiêu dùng thiết yếu </item>
+        <item> Nguyên vật liệu </item>
+        <item> Nhiên liệu </item>
+        <item> Hàng tổng hợp </item>
+    </string-array>
+
+    <string-array name="strSpinnerMethod">
+        <item> Chuyển Phát Nhanh </item>
+        <item> Chuyển Phát Thường </item>
+    </string-array>
+
+    <string-array name="strWarehouseList">
+        <item> Kho A </item>
+        <item> Kho B </item>
+        <item> Kho C </item>
+        <item> Kho D </item>
+    </string-array>
+</resources>

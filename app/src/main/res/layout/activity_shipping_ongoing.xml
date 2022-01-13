@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".ShippingOngoing"
+    android:background="@drawable/background_img">
+
+    <TextView
+        android:id="@+id/textAnnDownload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Đang thực hiện quá trình giao hàng cho đơn hàng: "
+        android:textColor="#e3070a"
+        android:textStyle="bold"
+        android:textSize="26sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        ></TextView>
+    <ImageView
+        android:id="@+id/ivAppImageDownload"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="15dp"
+        android:src="@drawable/ship_item"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textAnnDownload"></ImageView>
+
+    <TextView
+        android:id="@+id/tvReceiverName_ShipOngoing"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Người Nhận A"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textStyle="bold"
+        android:textColor="#00e827"
+        app:layout_constraintLeft_toRightOf="@id/ivAppImageDownload"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toBottomOf="@id/textAnnDownload"></TextView>
+
+
+    <TextView
+        android:id="@+id/tvShipType_ShipOngoing"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Thực Phẩm"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="#00e827"
+        app:layout_constraintLeft_toRightOf="@id/ivAppImageDownload"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@id/tvReceiverName_ShipOngoing"></TextView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:max="100"
+        android:progress="0"
+        app:layout_constraintTop_toBottomOf="@id/ivAppImageDownload"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+    <TextView
+        android:id="@+id/textDownloadProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vui lòng cập nhật tình trạng đơn hàng sau khi hoàn tất quá trình giao hàng"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/progressBar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/appShoppingText"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/appShoppingText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delivery System Demo App"
+        app:layout_constraintTop_toBottomOf="@id/progressBar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_marginTop="15sp"
+        android:textColor="#e3d91e"
+        app:layout_constraintBottom_toTopOf="@id/guideline3"
+        ></TextView>
+
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:src="@drawable/shippingbanner"
+        app:layout_constraintTop_toBottomOf="@id/guideline3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        ></ImageView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

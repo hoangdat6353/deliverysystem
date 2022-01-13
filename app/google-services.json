@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "77581105238",
+    "firebase_url": "https://deliverysystem-5c694-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "deliverysystem-5c694",
+    "storage_bucket": "deliverysystem-5c694.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:77581105238:android:a3a407ed87bb548d09e3f7",
+        "android_client_info": {
+          "package_name": "hoangdat.tdtu.deliverysystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "77581105238-vtghsco0otn2da2lo4d8fo2gi4ig8v79.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgkvEhg7rUrTRdrOFYE_hLHnqjYL2Bw6o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "77581105238-vtghsco0otn2da2lo4d8fo2gi4ig8v79.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

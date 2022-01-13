@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShippingDetails"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#fece2f"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/vehImage_Edit"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ship_item"></ImageView>
+
+        <TextView
+            android:id="@+id/vehName_Edit_Header"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@+id/vehImage_Edit"
+            android:includeFontPadding="false"
+            android:text="THÔNG TIN ĐƠN HÀNG"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-100dp"
+        android:layout_width="match_parent"
+        android:padding="20dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_height="125dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            app:cardBackgroundColor="#fece2f"
+            app:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:padding="5dp"
+                >
+
+                <ImageView
+                    android:id="@+id/imvBrand_ShippingDetails"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10sp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/brand" />
+
+                <TextView
+                    android:id="@+id/tvShipType_ShippingDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:layout_below="@+id/imvBrand_ShippingDetails"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20sp"
+                    android:text="Thực Phẩm"
+                    android:textSize="24sp" />
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:paddingTop="5dp"
+            android:layout_height="wrap_content">
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/imageViewVehicle_Edit_Final"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="-10dp"
+                    app:srcCompat="@drawable/name" />
+
+                <EditText
+                    android:id="@+id/etReceiverName_ShippingDetails"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@drawable/radius"
+                    android:ems="10"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:inputType="textPersonName" />
+
+            </TableRow>
+
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/imageViewBrand_Edit_Final"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="-10dp"
+                    app:srcCompat="@drawable/address" />
+
+                <EditText
+                    android:id="@+id/etReceiverAddress_ShippingDetails"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@drawable/radius"
+                    android:ems="10"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:inputType="textPersonName"
+                    />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/imageViewPlate_Edit"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="-10dp"
+                    app:srcCompat="@drawable/phone" />
+
+                <EditText
+                    android:id="@+id/etReceiverPhone_ShippingDetails"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@drawable/radius"
+                    android:ems="10"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:inputType="textPersonName"
+                    />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/imageViewNote_Edit_Final"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="-10dp"
+                    app:srcCompat="@drawable/note" />
+
+                <EditText
+                    android:id="@+id/etNote_ShippingDetails"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@drawable/radius"
+                    android:ems="10"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:inputType="textPersonName"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/imvViewStatus"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="-10dp"
+                    app:srcCompat="@drawable/check_icon" />
+
+                <TextView
+                    android:id="@+id/tvStatus_ShippingDetails"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@drawable/radius"
+                    android:ems="10"
+                    android:paddingTop="10dp"
+                    android:text="Đang chờ xử lý"
+                    android:textAlignment="center"
+                    android:paddingBottom="10dp"
+                    android:paddingStart="10dp"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_marginTop="20dp"
+                android:gravity="center">
+
+           <Button
+               android:id="@+id/btnChangeInformation"
+               android:text="CẬP NHẬT THÔNG TIN"
+               ></Button>
+
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+</LinearLayout>
