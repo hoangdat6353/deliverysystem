@@ -12,7 +12,9 @@ App Demo Quản lí hệ thống quản lí dịch vụ chuyển phát nhanh mô
 + NVCSKH <br />
 + NV Kho <br />
 + NV Giao Hàng <br />
+ <br />
 Danh sách chức năng bao gồm: <br />
+ 
 - Khách hàng: (1) Yêu cầu giao hàng (2) Hủy yêu cầu giao hàng (3) Kiểm tra tình trạng đơn hàng <br />
 
 - NV CSKH: (4) Tiếp nhận đơn hàng, (5) Xem đơn giao hàng, (6) In đơn giao hàng, (7) Hủy đơn giao hàng, (8) Cập nhật tình trạng đơn giao hàng <br />
